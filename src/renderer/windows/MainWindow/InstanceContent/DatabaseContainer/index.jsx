@@ -65,7 +65,7 @@ class Database extends React.PureComponent {
         onSelectKey={key => this.setState({key, version: this.state.version + 1})}
         onCreateKey={this.handleCreateKey.bind(this)}
         db={this.state.db}
-        onDatabaseChange={db => this.setState({db})}
+        onDatabaseChange={db => this.setState({db, pattern: ''})}
         onKeyMetaChange={() => this.setState({metaVersion: this.state.metaVersion + 1})}
         />
       <Content
