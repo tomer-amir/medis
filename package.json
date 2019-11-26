@@ -8,6 +8,7 @@
   "author": "luin <i@zihua.li> (http://zihua.li)",
   "main": "server/main.js",
   "scripts": {
+    "start": "npm run electron",
     "build": "webpack --progress --colors",
     "watch": "npm run build -- --watch",
     "electron": "electron .",
